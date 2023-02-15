@@ -7,6 +7,9 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "@ant-design/charts": "^1.4.2",
+    "@ant-design/icons": "^5.0.1",
+    "antd": "^5.2.1",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

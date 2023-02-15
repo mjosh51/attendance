@@ -1,0 +1,29 @@
+.container {
+  width: 20rem;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0.4em 1.4em;
+  padding-bottom: 1.6em;
+  cursor: pointer;
+}
+.wrapper {
+  display: grid;
+}
+.wrapper i {
+  text-align: right;
+}
+.stats {
+  display: flex;
+  gap: 1.5em;
+}
+.stats__text {
+  display: grid;
+}
+.stats__text span {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+.stats__text small {
+  text-transform: uppercase;
+  color: var(--text-custom-light);
+}
