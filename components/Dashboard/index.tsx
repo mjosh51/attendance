@@ -1,5 +1,3 @@
-import dynamic from 'next/dynamic';
-import Image from 'next/image';
 import React, { useState } from 'react';
 import BigCardsUI from './bigcards';
 import BannerUI from './banner';
