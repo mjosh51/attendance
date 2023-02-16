@@ -22,7 +22,7 @@ const BannerUI = () => {
           <div className={styles.profile__image}></div>
           <div>
             <div className={styles.greetings__top}>
-              Hello Chris,{' '}
+              Hello Admin,{' '}
               <Image src="/hand.svg" alt="hand" width={20} height={20} />
             </div>
             <div className={styles.greetings__bottom}>

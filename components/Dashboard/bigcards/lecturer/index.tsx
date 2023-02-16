@@ -26,7 +26,7 @@ const LecturerUI = () => {
     <div className={styles.card__lecturers}>
       <i className="fa-solid fa-ellipsis" id="more"></i>
       <div className={styles.cl__title}>
-        Top 5 lecturers <small>by Attendance</small>
+        Top 5 lecturers <small>by Attendance (%)</small>
       </div>
       <table className={styles.table}>
         <thead>
@@ -44,19 +44,16 @@ const LecturerUI = () => {
             },
             index: Key,
           ) => {
-            const expectedTotalAttendanceForASemester = 30; // hard coded
-            const attendanceInPercentage =
-              (expectedTotalAttendanceForASemester / 100) *
-              result.attendanceCount; // attendance count in percent
-            console.log(attendanceInPercentage);
-            <tbody key={index}>
-              <tr>
-                <td>
-                  {result.firstName} {result.lastName}
-                </td>
-                <td>{result.attendanceCount}</td>
-              </tr>
-            </tbody>;
+            return (
+              <tbody key={index}>
+                <tr>
+                  <td>
+                    {result.firstName} {result.lastName}
+                  </td>
+                  <td>{result.attendanceCount}</td>
+                </tr>
+              </tbody>
+            );
           },
         )}
       </table>

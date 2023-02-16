@@ -6,9 +6,15 @@
   gap: 1em;
   transform: translateY(-10%);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 400px) {
+  .container {
+    width: 79%;
+  }
+}
+@media screen and (min-width: 700px) {
   .container {
     flex-wrap: nowrap;
+    width: 95%;
   }
 }
 @media screen and (min-width: 999px) {

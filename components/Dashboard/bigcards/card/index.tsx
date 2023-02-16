@@ -26,7 +26,7 @@ const BigCardUI = () => {
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.title}>
-          Top 5 students <small>by Attendance</small>
+          Top 5 students <small>by Attendance (%)</small>
         </div>
         <table className={styles.table}>
           <thead className={styles.table__headings}>
@@ -35,7 +35,7 @@ const BigCardUI = () => {
               <th>Last Name</th>
               <th>Matric. No</th>
               <th>Email</th>
-              <th>Attendance</th>
+              <th>Attendance (%)</th>
             </tr>
           </thead>
           {results.map(

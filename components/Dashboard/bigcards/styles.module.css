@@ -3,10 +3,21 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 2.2em;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 400px) {
   .container {
+    width: 79%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .container {
+    width: 95%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    gap: 1em;
     flex-wrap: nowrap;
   }
 }

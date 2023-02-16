@@ -14,17 +14,10 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </Head>
-    {/* <header>
-      <nav>
-        <Link href="/">Home</Link> | <Link href="/about">About</Link> |{' '}
-        <Link href="/users">Users List</Link> |{' '}
-        <a href="/api/users">Users API</a>
-      </nav>
-    </header> */}
     {children}
-    <footer>
+    <footer style={{ textAlign: 'center', marginTop: '2em' }}>
       <hr />
-      <span>I'm here to stay (Footer)</span>
+      <span>A project by Sam Uzoma 🎉</span>
     </footer>
   </div>
 );
