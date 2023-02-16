@@ -1,0 +1,132 @@
+.container {
+  background-color: var(--bg-color-secondary);
+  /* background-color: #16222ef2; */
+  border-radius: 8px;
+  padding: 0.8em 0;
+  color: #fff;
+}
+.title {
+  font-size: 1.4em;
+  font-weight: 700;
+  padding: 0 1em;
+  color: var(--bg-color-primary);
+}
+.title small {
+  font-size: 0.6em;
+  color: #eee;
+}
+.table {
+  width: 100%;
+  margin: 2em 0;
+}
+.table thead tr th {
+  text-align: left;
+  padding: 0 10px;
+  font-size: 0.9em;
+}
+.table tbody tr:nth-of-type(odd) {
+  background: #eee;
+  color: #000;
+}
+.table tr td {
+  padding: 0.5em 0.6em;
+}
+
+/* Lecturers */
+.card__lecturers {
+  background-color: #fff;
+  border-radius: 8px;
+  /* padding: 0.5em 1.5em 0.5em 0.5em; */
+}
+.card__lecturers i {
+  float: inline-end;
+}
+.cl__title {
+  color: var(--bg-color-primary);
+  padding: 0 0.6em;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.cl__title small {
+  color: #000;
+  font-size: 0.6em;
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    padding: 0 1em;
+  }
+  /* Force table to not be like tables anymore */
+  .table,
+  .table thead,
+  .table tbody,
+  .table th,
+  .table td,
+  .table tr {
+    display: block;
+  }
+  .table {
+    padding-bottom: 1.5em;
+  }
+  .table tbody td {
+    padding: 1.5em 2.9em 0.5em 1em;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  .table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .table tr {
+    margin-top: 15px;
+  }
+
+  .table td {
+    /* Behave  like a "row" */
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .table td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  /*
+	Label the data
+	*/
+  .table td:nth-of-type(1):before {
+    content: 'First Name';
+    font-weight: 700;
+  }
+  .table td:nth-of-type(2):before {
+    content: 'Last Name';
+    font-weight: 700;
+  }
+  .table td:nth-of-type(3):before {
+    content: 'Matric. No';
+    font-weight: 700;
+  }
+  .table td:nth-of-type(4):before {
+    content: 'Email';
+    font-weight: 700;
+  }
+  .table td:nth-of-type(5):before {
+    content: 'Attendance';
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 769px) {
+  .container {
+    width: 70%;
+  }
+  .table thead tr th {
+    background-color: var(--bg-color-primary);
+  }
+}

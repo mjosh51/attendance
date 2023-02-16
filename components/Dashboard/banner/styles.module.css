@@ -51,8 +51,9 @@
 .button {
   background-color: var(--bg-color-primary);
   display: flex;
+  align-items: center;
   border-radius: 8px;
-  gap: 0.75em;
+  gap: 0.5em;
   font-size: 14px;
   padding: 0.55em;
   cursor: pointer;

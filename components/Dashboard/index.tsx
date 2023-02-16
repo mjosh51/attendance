@@ -2,6 +2,7 @@ import { Col, Layout, Row } from 'antd';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import React, { useState } from 'react';
+import BigCardsUI from '../bigcards';
 import BannerUI from './banner';
 import CardsUI from './cards';
 // import GraphsUI from './graphs';
@@ -16,6 +17,7 @@ export default function Home() {
     <div className={styles.container}>
       <BannerUI />
       <CardsUI />
+      <BigCardsUI />
       <GraphsUI />
     </div>
   );

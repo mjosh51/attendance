@@ -1,16 +1,11 @@
-import { NextApiRequest, NextApiResponse } from 'next'
-import { sampleUserData } from '../../../utils/sample-data'
+import axios from 'axios';
 
-const handler = (_req: NextApiRequest, res: NextApiResponse) => {
+export default async function fetchStudentAttendanceRanking() {
+  let data: [];
   try {
-    if (!Array.isArray(sampleUserData)) {
-      throw new Error('Cannot find user data')
-    }
-
-    res.status(200).json(sampleUserData)
-  } catch (err: any) {
-    res.status(500).json({ statusCode: 500, message: err.message })
-  }
+    const res = await axios.get(
+      `${process.env.BASE_URL}/api/student-attendance-ranking/fetch`,
+    );
+    data = res.data.result;
+  } catch (err: any) {}
 }
-
-export default handler
